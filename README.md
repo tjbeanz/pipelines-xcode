@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/TomBuehner/test-project/_apis/build/status/tjbeanz.pipelines-xcode?branchName=master)](https://dev.azure.com/TomBuehner/test-project/_build/latest?definitionId=2&branchName=master)
 
 # Contributing
 
