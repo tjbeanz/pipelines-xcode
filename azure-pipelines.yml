@@ -10,7 +10,9 @@ variables:
 
 pool:
   vmImage: 'macOS 10.13'
-    
+
+steps:
+
 - task: Xcode@5
   inputs:
     actions: 'clean build analyze archive'
