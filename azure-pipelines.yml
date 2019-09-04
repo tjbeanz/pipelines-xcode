@@ -6,7 +6,7 @@
 variables:
   scheme: ''
   sdk: 'iphoneos'
-  configuration: 'Release'
+  configuration: 'Debug'
 
 pool:
   vmImage: 'macOS 10.13'
