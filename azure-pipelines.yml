@@ -22,3 +22,4 @@ steps:
     xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
     packageApp: true
     archivePath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
+    exportMethod: 'development'
