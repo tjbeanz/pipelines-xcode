@@ -10,13 +10,13 @@ variables:
 
 pool:
   vmImage: 'macOS 10.13'
-
-steps:
+    
 - task: Xcode@5
   inputs:
-    scheme: '$(scheme)'
-    sdk: '$(sdk)'
+    actions: 'clean build analyze archive'
     configuration: '$(configuration)'
+    sdk: '$(sdk)'
+    scheme: '$(scheme)'
     xcodeVersion: 'default' # Options: 8, 9, default, specifyPath
-    exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
-    packageApp: false
+    packageApp: true
+    archivePath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
